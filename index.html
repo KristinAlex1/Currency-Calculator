@@ -17,14 +17,16 @@
             <div class="form">
                 <div class="for">
                     <p> From</p>
+                    <label for = "from"> Enter Amount</label>
                     <input type = "number" placeholder="100">
-                    <img src="https://flagsapi.com/CA/flat/64.png">
-                    <select name = "from-currency">
-                        <option val = "CAD" selected>CAD</option>
-                        <option val = "USD">USD</option>
-                        <option val = "INR">INR</option>
-                    </select>
-                    
+                    <div class="for-select">
+                        <img src="https://flagsapi.com/CA/flat/64.png">
+                        <select name = "from-currency">
+                            <option val = "CAD" selected>CAD</option>
+                            <option val = "USD">USD</option>
+                            <option val = "INR">INR</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="converter-img">
                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -35,14 +37,16 @@
         
                 <div class="to">
                     <p> To</p>
-                    <input type = "number" placeholder="100">
-                    <img src="https://flagsapi.com/US/flat/64.png">
-                    <select name = "to-currency">
-                        <option val = "CAD">CAD</option>
-                        <option val = "USD" selected>USD</option>
-                        <option val = "INR">INR</option>
-                    </select>
-                    
+                    <label for = "to"> Enter Amount</label>
+                    <input type = "number" placeholder="100" >
+                    <div class="to-select">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name = "to-currency">
+                            <option val = "CAD">CAD</option>
+                            <option val = "USD" selected>USD</option>
+                            <option val = "INR">INR</option>
+                        </select>
+                    </div>
                 </div>
 
             
@@ -52,7 +56,7 @@
                     <p>1usd = 1.7cad</p>
 
                 </div>
-            <button> Convert</button>
+            <button> Get Exchange Rate</button>
 
 
 
@@ -71,5 +75,6 @@
     
 
     <script src = "app.js">    </script>
+    <script src = "codes.js">    </script>
 </body>
 </html>
