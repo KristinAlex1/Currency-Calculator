@@ -6,8 +6,8 @@
 
 body{
 
-    background-image: url();
-    
+    background-image: url("bg.png");
+    background-position: 50% 50%;
 }
 
 h1{
