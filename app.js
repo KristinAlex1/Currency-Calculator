@@ -3,6 +3,7 @@ const rateBtn = document.querySelector("button");
 
 rateBtn.addEventListener("click", () => {
     console.log("button clicked");
+    event.preventDefault();
     fetchApi("https://api.currencyapi.com/v3/latest?apikey=cur_live_NYHvSxa3EykLYZb9kLnvuvLWmjcEXo8JYLmPoWF1");
 });
 
