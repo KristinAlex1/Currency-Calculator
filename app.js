@@ -8,6 +8,7 @@ let forValue = document.querySelector("#for-input");
 let toValue = document.querySelector("#to-input");
 let currencyValues = {};
 let option1 = [];
+let msgContent = document.querySelector("#message");
 
 
 
@@ -73,6 +74,11 @@ function converter(){
 
         let val = (parseFloat(forValue.value) / forExchangeRate) * toExchangeRate;
         toValue.value = val.toFixed(3);
+
+        
+
+        msgContent.innerText = "";
+        msgContent.innerText += `1 ${forCode} = ${toExchangeRate} ${toCode}` ;
     };
 
 
@@ -90,6 +96,8 @@ function changeflags(){
 
     forImage.src = `https://flagsapi.com/${valFor2}/flat/64.png`;
     toImage.src = `https://flagsapi.com/${valTo2}/flat/64.png`;
+
+    
 
 
 }
