@@ -86,6 +86,8 @@ function converter(){
 
 }
 
+// function to change flags when the option is selected
+
 function changeflags(){
 
     let valFor = forSelectionOption.value;
