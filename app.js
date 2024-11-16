@@ -11,7 +11,7 @@ let option1 = [];
 let msgContent = document.querySelector("#message");
 
 
-
+// function to call the required functions first when the page is refreshed
 async function callFirst(){
     
     await fetchApi(apiUrl);
